@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Modern Google Search</title>
+</head>
+<body>
+<header>
+  <!-- parent -->
+    <nav class="navbar">
+        <div>
+          <img class="logo"src="data:image/png;base64,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" alt="Google"></imgsrc>
+        </div>
+          <i class="fas fa-search"></i>  
+          <input class="search"type="text" placeholder="Panthera leo"/>
+        <div>
+          <span class="email">kendrick.lamar@gmail.com </span>
+        </div>
+        <div>
+          <i class="fas fa-caret-down"></i> 
+        </div>
+        <div class="gridapp">
+          <img class="grid"src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAJ1BMVEVpaWn///+xsbHCwsJjY2Ovr69gYGDe3t7V1dW/v79aWlpdXV3l5eVG8oGtAAAB5UlEQVR4nO3dy5XDIBQEUQaBvs4/3nECzaJ2T64bQB9qLQm1c3ZiHn/ZiSZ7PxebBzzn2eYziPtanKajyTH6YvO60eQzWx+N2LdVIZpsbVW47WhydAsTCxELAQszCxELAQszCxELAQszCxELAQszCxELAQszCxELAQszCxELAQszCxELAQszCxELAQszCxELAQszCxELAQszCxELAQszCxELgW/hvHdi+a7+RJP7PhebFzznbMe1EddncZoDTW7b6huODzzn0Raj72BhfRbWZ2F9FtZnYX0W1mdhfRbWZ2F9FtZnYX0W1mdhfQ3e6VTlnqh+/sDTNQsDCxELAQszCxELAQszCxELAQszCxELAQszCxELAQszCxELAQszCxELAQszCxELAQszCxELAQszCxELAQszCxELAQszCxELAQszCxELAQuzQoXv/95iMfoOFtZnYX0W1mdhfRbWZ2F9FtZnYX0W1mdhfRbWZ2F9Ftb3A/+3eP8/St7/dM3CwELEQsDCzELEQsDCzELEQsDCzELEQsDCzELEQsDCzELEQsDCzELEQsDCzELEQsDCzELEQsDCzELEQsDCzELEQsDCzELEQsDCzELEQuBbOJ9BLN/V72hyjFXhdaPJZ7aT3b9U5Z6oef4DDBuBKQiDIL8AAAAASUVORK5CYII=" alt="grid"> 
+        </div>
+        <div>
+          <img class="red"src="http://www.code-gaming.com/img/google_plus.svg" alt="g+">
+        </div>
+    </nav>
+</header>
+
+<main id="main">
+    <!-- parent -->
+<div class="column">
+  <div class="left">
+  <h6>TYPES</h6>
+  <div class="icons 1">
+     <ul>
+       <li><a href="#"><i class="far fa-user"></i></a></li>
+       <li><a href="#"><i class="fas fa-globe-asia"></i></a></li>
+       <li><a href="#"><i class="far fa-image"></i></a></li>
+       <li><a href="#"><i class="far fa-compass"></i></a></li>
+       <li><a href="#"><i class="fas fa-film"></i></a></li>
+       <li><a href="#"><i class="fas fa-plus-circle"></i></a></li>
+     </ul>
+  </div>
+  <div class="type 1">
+     <ul>
+      <li><a href="#">Custom</a></li>
+      <li><a href="#">Web</a></li>
+      <li><a href="#">Images</a></li>
+      <li><a href="#">Maps</a></li>
+      <li><a href="#">Videos</a></li>
+      <li><a href="#">More</a></li>
+     </ul>
+  </div>
+  <h6>FILTERS</h6>
+  <div class="icons 2">
+    <ul>
+      <li><a href="#"><i class="fas fa-map-marker-alt"></i></a></li>
+      <li><a href="#"><i class="far fa-clock"></i></a></li>
+      <li><a href="#"><i class="far fa-list-alt"></i></a></li>
+      <li><a href="#"><i class="far fa-comment-alt"></i></a></li>
+    </ul>
+    </div>
+    <div class="type 2">
+    <ul>
+      <li><a href="#">Nearby</a></li>
+      <li><a href="#">Last Month</a></li>
+      <li><a href="#">All Results</a></li>
+      <li><a href="#">All Languages</a></li>
+    </ul>
+    </div>
+    <div class="results 1">
+     <ul>
+       <li class="num"><a href="#">465000 RESULTS</a></li>
+       <li class="time"><a href="#">0.3 Sec</a></li>       
+     </ul>
+   </div>
+  </div>
+ </div>
+
+<div class="column">
+    <div class="center">
+    <h2>Web</h2>
+    <h3>Panthero leo - Wikipedia</h3>
+      <p>The lion (Panthero leo)is one of the four big cats in the genus Panthera and a 
+         member of the family Felidae. With some males exceeding 250 kg( 500lbs )in 
+         weight,[4] it is the second largest in weight after the tiger. Wild lions currently
+         exist in sub-Saharan Africa and in Asia.
+      <p class="com">en.wikipedia.com</p>
+    <h3>Lion - Wikipedia</h3>
+      <p>Packer, university of Minnesota ecologist and the world's leading lion expert, spun
+         the wheel of the Land Rover and drove straight.</p>
+      <p class="com"c>en.wikipedia.com</p>
+    <h3>Panthero leo - african lion</h3>
+      <p>An African lion,Panthera leo, at the Okavango Delta, Botswana. Within the genus 
+         Panthera, the lion is further classified as species.
+      </p>
+      <p class="com">animal.search.com</p>
+    <h3>Panthero leo - the animal encyclopedia</h3>
+      <p>Profile of the lion, a species of large cat that has a buff colored coat, white
+         underparts, and a long tail that ends in a tuft ofdi
+      </p>
+      <p class="com">encyclopedia.an.com</p>
+     <h3>Panthero leo - the free dictionary</h3>
+       <p>The lion is the powerhouse of the savanna, weighing in at 265-420 pounds and up
+          to 10 feet long.</p>
+       <p class="com"></p>freedictionary.com</p>
+   </div>
+   </div>
+  <div class="column">
+    <div class="right">
+    <h2>Images</h2> 
+     <div class="background">
+      <img src="http://premiertours.com/wp-content/uploads/2014/06/Lion-400x250.jpg" alt="lion-against-blue-sky">
+     </div>                        
+     <div> 
+       <img class="lion 1"src="https://vignette.wikia.nocookie.net/criminal-case-grimsborough-fanfiction/images/6/65/Male-Lion-Wallpaper-01-400x300-1-.jpg/revision/latest?cb=20150614182317" alt="lion">
+       <img class="lion 2"src="https://www.thoughtco.com/thmb/lF12X7xQlUUNCra4X-15wD82f-A=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/shutterstock_1147674-589cfcbc3df78c475878e40f.jpg" alt="male and female lion">
+       <img class="lion 3"src="http://jfhlaw.co.uk/wp-content/uploads/2015/08/lion-400x300.png" alt="roaring lion">
+       <img class="lion 4"src="http://www.fivezerosafaris.com/site/wp-content/uploads/2015/03/h6j9011-400x300.jpg" alt="sleeping">
+     </div>
+     <div class="right2">
+  <h2>Maps</h2>
+    <div>
+      <img class="map"src="https://www.google.com/maps/vt/data=x3ZdCWbk4LO8Wwkm-ObuqjPbBSVgJ0YwWhiUNcZ92rNKGKwpiK7RKZ0l1l6ApdZU5-_ac0oQBMbXnBpJ7VhN94SgIzHzvNyp3MbJQInWlWbYjaceh-Sxo7FAESIl1wScz5BmqF4lyqYANwJ_oiF0VSb9zbzbgMYEvUD-WeWxUtdlUNkXAsp2ykf2bMLYqWeQ9JpGKXmfQcwlO-KjC0P_1g1TlMB7Fbt6G7R5REmsoeL2xz4PsDchJVij0sOZetLLIu71aNRfWmdrFiq3etibTZZn5Vuryvo5Epe1c0OHo2H2WSL7bAD1xcJggmuK8ta5tnTvRQLgbXGbvPwLvZakwCe1FnunEDAADKhOqq9ecvQdWB2SvB6VOwaIcqd2IrtharpLutTs9tpX2KERxFA031JcKw5GUL0" alt= "lion country safar wpb">
+    </div>
+ </div>
+</main>
+<footer>
+    <h6>Roxanne R. Awang. Wyncode Academy August 2018</h6>
+</footer>
+</body>
+</html>
